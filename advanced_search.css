@@ -1,0 +1,98 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 10% 1fr 1fr;
+    width: 97vw;
+    height: 97vh;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+
+.headerback {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 1;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+nav {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    text-align: right;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-color: #f1f1f1;
+}
+
+.container a {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.container h1 {
+    font-family: "Liberation Sans";
+    font-size: 20px;
+    color: #d93025;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-left: 5%;
+}
+
+.terms {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    margin-left: 5%;
+}
+
+.terms form {
+    margin-top: 5%;
+    row-gap: 5px;
+}
+
+.terms span {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.terms label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.terms input {
+    display: inline-block;
+    align-self: left;
+    margin-bottom: 10px;
+    width: 20%;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    height: 20px;
+    position: absolute;
+  }
+
+.terms input:focus {
+    outline: none;
+    border:2px solid lightblue;
+    box-shadow: 2px 2px 10px #719ECE;
+}
+
+#submit {
+    background-color: #4b8df8;
+    font-family: Arial, sans-serif;
+    color: #dcffff;
+    height: 25px;
+    border-radius: 20px;
+}

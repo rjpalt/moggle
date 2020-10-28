@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="advanced_search.css">
+    </head>
+    <body>
+      
+        <div class="container">    <!-- Navigation element to return to the search page -->
+
+            <span class="headerback"></span>
+
+            <img id="logo" src="moggle.jpg" alt="The Moggle Logo">
+
+            <nav>
+                <a href="index.html">Back to Moggle Search</a>
+            </nav>
+
+            <h1>Advanced Search</h1>
+
+            <div class="terms">
+                    <span>Find pages with...</span>
+                    <form id="search" search action="https://google.com/search">
+                        <label for="as_q">all these words:</label>
+                        <input id="as_q" type="text" name="as_q">
+                        <br>
+                        <label for="as_epq">this exact word or phrase:</label>
+                        <input id="as_epq" type="text" name="as_epq">
+                        <br>
+                        <label for="as_oq">any of these words:</label>
+                        <input id="as_oq" type="text" name="as_oq">
+                        <br>
+                        <label for="as_eq">none of these words:</label>
+                        <input id="as_eq" type="text" name="as_eq">
+                    </form> 
+                    <button id="submit" type="submit" form="search" value="Submit">Advanced Search</button> 
+            </div>
+        
+        </div>
+    </body>
+</html>
